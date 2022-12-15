@@ -1,10 +1,134 @@
-#enviar{background-color: rgb(139, 195, 74);}
-#carouselExampleSlidesOnly{filter:brightness(50%)}
-#color-del-footer{background-color: rgb(21, 67, 96);}
+
+#carouselExampleSlidesOnly{
+    filter:brightness(50%);
+}
+
+/* Conviertete en orador */
+
+.cont-orador {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+#enviar{
+    background-color: rgb(139, 195, 74);
+}
+
+.bordecito {
+    padding: 0;
+    /* con este border se genera el espacio entre los cuadraditos */
+    border: 2px solid transparent;
+}
+
+.bordecito-in {
+    /* con este, se habilita el borde de bootstrap "pisando" al de css */
+    border: 1px solid transparent;
+    /* con este padding, hacemos que se vea mas cuadradito */
+    padding: 30px 0;
+}
+
+/* formulario nombre, apellido y email */
+
+.form-div {
+    padding: 0 6px;
+}
+
+.form-email {
+    padding: 10px 6px;
+}
+
+.gx-4 .col-6 {
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.container-cantidad {
+    padding: 0;
+}
+
+.cantidad {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: transparent;
+    outline: none;
+    padding: 5px 10px;
+    width: 99%;
+}
+
+.gx-4 .col-6 .flex-start {
+    margin-left: 8px;
+} 
+
+#num1 {
+    margin-left: 8px; 
+}
+
 .TotalAPagar{
-    background-color: rgb(109, 189, 221);
+    background-color: rgb(195, 229, 255);
     text-decoration: none;
-    color: blue;
-    border-color: transparent;
-    border-radius: 1px;
+    color: rgb(9, 9, 143);
+    padding: 5px 0px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.TotalAPagar-2 {
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(9, 9, 143);
+    border: none;
+}
+
+#sumando1 {
+    width: 70%;
+}
+
+.borrar-resumen {
+    padding: 6px;
+}
+
+#color-del-footer{
+    background-color: rgb(21, 67, 96);
+}
+
+
+/* @media queries for responsive design */
+
+/* @media del conviertete en orador, a medida que se achica la pantalla, se incrementa el ancho del div cont-orador en 5vw. */
+
+@media screen and (max-width: 900px) {
+    .cont-orador {
+        max-width: 65vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cont-orador {
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cont-orador {
+        max-width: 75vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cont-orador {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cont-orador {
+        max-width: 85vw;
+        margin: 0 auto;
+    }
 }
