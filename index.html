@@ -209,7 +209,7 @@
               </div>
 
               <container class="grid p-1">
-                <form class="p-2 justify-content-evenly">
+                <form class="p-2 justify-content-evenly" id="JS">
                   <div class="row justify-content-evenly">
                     <div class="col-6 form-div">
                       <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
@@ -221,38 +221,41 @@
                   <div class="row justify-content-center align-content-center text-center form-email">
                     <input placeholder="Correo" type="email" class="form-control" id="inputEmail3">
                   </div>
+                
+
+                  <div class="container justify-content-center container-cantidad">
+                    <div class="row gx-4">
+
+                      <div class="col-6">
+                      <p class="flex-start">Cantidad:</p>
+                      <input id="cantidad" type="text" placeholder="Cantidad" class="cantidad" >
+                      </div>
+
+                    <div class="col-6 start-50">
+                      <p>Categoria</p>
+                      <form class="formulario" action="index.html" method="post">
+                        <select name="opciones" id="categoria" class="categoria">
+                          <option value="1" selected>Estudiante</option>
+                          <option value="2">Trainee</option> 
+                          <option value="3">Junior</option> 
+                        </select> 
+                      </form> 
+                    </div>
+                  </div>
+                  </div>
+
+                
+                  <div class="row" id="liveAlertPlaceholder">
+                    <div class="col p-1 borrar">
+                      <span type="reset" id="borrar" class="btn btn-success w-100">Borrar</span>
+                    </div>
+                    <div class="col p-1 resumen">
+                      <span type="submit" id="boton" class="btn btn-success w-100">Resumen</span>
+                    </div>
+                  </div>
                 </form>
               </container>
 
-              <div class="container justify-content-center container-cantidad">
-                <div class="row gx-4">
-
-                  <div class="col-6">
-                    <p class="flex-start">Cantidad:</p>
-                    <input id="num1" type="text" placeholder="Cantidad" class="cantidad" >
-                  </div>
-
-                  <div class="col-6 start-50">
-                    <p>Categoria</p>
-                    <form class="formulario" action="index.html" method="post">
-                      <select name="opciones" id="opcion" class="cantidad">
-                      <option value="1" selected>Estudiante</option>
-                      <option value="2">Trainee</option> 
-                      <option value="3">Junior</option> 
-                      </select> 
-                    </form> 
-                  </div>
-
-                </div>
-
-                <div class="TotalAPagar d-flex ">
-                  <button type="button" class="TotalAPagar-2" onclick="calcular()">Total a Pagar: $</button>
-                  <input class="TotalAPagar-2" id="sumando1" type="text">
-                </div>
-                <div class="row p-1">
-                  <div class="d-grid  col-6 mx-auto borrar-resumen"><button type="button" id="enviar" class="btn btn-success border-white">Borrar</button></div>
-                  <div class="d-grid  col-6 mx-auto borrar-resumen"><button type="button" id="enviar" class="btn btn-success border-white">Resumen</button></div>
-                </div>  
               </div>
 
           </container>
@@ -263,7 +266,7 @@
     </section>
 
     <!-- Hoja de JavaScript -->
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 
     <!-- Footer -->
     <footer id="color-del-footer">

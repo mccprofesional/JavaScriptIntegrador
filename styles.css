@@ -10,8 +10,9 @@
     margin: 0 auto;
 }
 
-#enviar{
+#boton, #borrar{
     background-color: rgb(139, 195, 74);
+    border-color: rgb(139, 195, 74);
 }
 
 .bordecito {
@@ -46,7 +47,7 @@
     padding: 0;
 }
 
-.cantidad {
+.cantidad,.categoria {
     border: 1px solid #ccc;
     border-radius: 6px;
     background-color: transparent;
@@ -59,9 +60,6 @@
     margin-left: 8px;
 } 
 
-#num1 {
-    margin-left: 8px; 
-}
 
 .TotalAPagar{
     background-color: rgb(195, 229, 255);
